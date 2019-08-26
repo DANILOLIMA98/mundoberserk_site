@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="_css/style.css">
+	<title>Mundo Berserk</title>
+	<meta name="description" content="Sistema de Blog do Danilo">	
+		<link rel="shortcut icon" href="_imagens/flavicon.ico">
+</head>
+<body>
+	<div id="site">
+	<div id="contato">			
+	</div>
+		<nav id="navmenu">
+				<ul>
+					<li><a href="index.html">INÍCIO</a></li>
+					<li><a href="manga.html">LER MANGÁ</a></li>
+					<li><a href="videos.html">FILMES/ANIME</a></li>
+					<li><a href="wallpapers.html">WALLPAPERS</a></li>
+					<li><a href="contato.html">CONTATO</a></li>
+				</ul>	
+		</nav>
+	<div id="conteudo">
+	<p>CONTATO</p>
+	<form id="fclient" action="danilolima1998p@gmail.com" method="post"> <!--TEM O GET E O POST-->
+		<fieldset>
+			<legend>DADOS PESSOAIS</legend>
+			<p>
+				<label for="inome">Nome:</label>
+				<input type="text" name="nome" id="inome" placeholder="Danilo Lima">
+			</p>
+			<p>
+				<label for="idata">Data de Nascimento:</label>
+				<input type="date" name="data" id="idata"/>
+			</p>
+			<p>
+				Sexo:
+				<input type="radio" name="sexo" id="imas"/><label for="imasc">Masculino</label>
+				<input type="radio" name="sexo" id="ifem"/><labe for="ifem">Felimino</label>
+			</p>
+			<p>
+				<label for="iemail">E-mail:</label>
+				<input type="email" name="email" id="iemail" placeholder="e-mail"/>
+			</p>
+			<p>
+				<label for="isenha">Senha:</label>
+				<input type="password" name="senha" id="isenha" maxlength="30"/>
+			</p>
+		</fieldset>
+		<fieldset>
+		<legend>CONTATO</legend>
+			<p>
+				Estado:s
+				<select>
+					<optgroup label="Nordeste">
+						<option value="PE">Pernambuco</option>
+					</optgroup>
+					<optgroup label="Outras">
+						<option value="SP">São Paulo</option>
+						<option value="MG">Minas Gerais</option>
+					</optgroup>
+				</select>
+			</p>
+			<p>
+				Cidade:
+				<input type="text" name="cidade" id="icidade" maxlength="20" placeholder="Cidade" list="cidades"/>
+				<datalist id="cidades">
+					<option>Recife</option>
+					<option>Jaboatão dos Guararapes</option>
+					<option>Cortês</option>
+					<option>Ribeirão</option>
+				</datalist>
+			</p>
+			<p>
+				Endereço:
+				<input type="text" name="endereco" id="iendereco" placeholder="Rua, Av, Trav..."/>
+			</p>
+			<p>
+				Numero
+				<input type="number" name="numero" id="inumero" min="1" max="99999"/>
+			</p>	
+			<p>
+				Complemento
+				<textarea name="complemento" id="icomplemento" rows="5" cols="20"></textarea>
+			</p>	
+			<p>
+				Telefone
+				<input type="text" name="telefone" id="itelefone" maxlength="14" placeholder="(ddd) 9999-9999"/>
+			</p>
+			<p>
+				<input type="checkbox" name="promocao" id="ipromocao"/>
+				<label for="ipromocao">Gostaria de de Receber E-mails promocionais</label> 
+			</p>	
+		</fieldset>
+		<input type="submit" value="Enviar"/>
+		<input type="Reset" value="LImpar"/>
+
+		<!-- <input type="image" src"link"/>
+		satisfação
+		<input type="range" min="1" max="10" step"1"/>
+		<input type=""
+		-->
+		<input type="file"/>
+	</form>
+	</div>
+	
+	<div id="rodape">
+	&copy;2019 Mundo Berserk</br> Desenvolvido por Danilo Lima
+	</div>
+	</div>
+</body>
+</html>
